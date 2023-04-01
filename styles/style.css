@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+/* this fixes the error in the animation that was displaying the scrollbar */
+/* remove all button styles */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  min-height: 100vh;
+  line-height: 1.3;
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  background: hsl(225, 100%, 94%) url("../images/pattern-background-mobile.svg") top/100% no-repeat;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1rem;
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
+
+.order-summary-card {
+  width: 330px;
+  margin: 1rem 0;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 15px 25px 0 hsla(224, 23%, 55%, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .order-summary-card {
+    width: 450px;
+  }
+}
+.order-summary-card__image-img {
+  border-radius: 2rem 2rem 0 0;
+  width: 100%;
+}
+.order-summary-card__content {
+  padding: 2rem 1.5rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .order-summary-card__content {
+    padding: 3rem;
+  }
+}
+.order-summary-card__content-container {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+.order-summary-card__content-title {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+@media screen and (min-width: 768px) {
+  .order-summary-card__content-title {
+    font-size: 1.75rem;
+  }
+}
+.order-summary-card__content-description {
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+.order-summary-card__container {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.5rem;
+}
+.order-summary-card__icon {
+  margin-right: 1rem;
+}
+.order-summary-card__plan-title {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.order-summary-card__plan-price {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+.order-summary-card__change-link {
+  margin-left: auto;
+  text-decoration: underline;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+.order-summary-card__change-link:hover {
+  cursor: pointer;
+  color: hsl(245, 75%, 65%);
+  background-color: underline;
+  text-decoration: unset;
+}
+.order-summary-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.order-summary-card__button {
+  font-weight: 900;
+}
+.order-summary-card__button--primary {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 0.5rem;
+  color: white;
+  box-shadow: 0 10px 20px 0 hsla(245, 75%, 52%, 0.4);
+}
+.order-summary-card__button--primary:hover {
+  cursor: pointer;
+  color: white;
+  background-color: hsl(245, 75%, 65%);
+  text-decoration: unset;
+}
+.order-summary-card__button--secondary {
+  color: hsl(224, 23%, 55%);
+}
+.order-summary-card__button--secondary:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+  background-color: unset;
+  text-decoration: unset;
+}/*# sourceMappingURL=style.css.map */

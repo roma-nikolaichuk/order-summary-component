@@ -1,0 +1,14 @@
+@mixin flex($align-items: unset, $justify-content: unset) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin hover($color: unset, $background-color: unset, $text-decoration: unset) {
+  &:hover {
+    cursor: pointer;
+    color: $color;
+    background-color: $background-color;
+    text-decoration: $text-decoration;
+  }
+}
